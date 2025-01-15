@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body style="background-color: #E1E5DC;">
+
+        <div class="navbartop">
+            <a href="#home">Tailles</a>
+            <a href="#services">Abattage/démontage </a>
+            <a href="#about">Haubanage/sécurisation</a>
+            <a href="#contacts">Broyage</a>
+            <a href="#contacts">Entretiens</a>
+        </div> 
+
+        <div id="homepage">
+            <div id='home'></div>
+                <div class="logobar" style="margin-bottom: 1vh">
+                    <div class='logo'></div>
+                    <div class='menubuttonAnimation dropdown-center'>
+                        <button class='menubutton' data-bs-toggle="dropdown" aria-expanded="false"></button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./index.html">Acceuil</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">Mes services détaillés</h6></li>
+                            <li><a class="dropdown-item" href="./services.html">Taille raisonnée</a></li>
+                            <li><a class="dropdown-item" href="#">Abattage et démontage</a></li>
+                            <li><a class="dropdown-item" href="#">Haubanage et sésurisation</a></li>
+                            <li><a class="dropdown-item" href="#">Broyage de branche</a></li>
+                            <li><a class="dropdown-item" href="#">Entretien d'éspaces verts</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Mes chantiers</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card text-center mb-3 h-100">
+                            <div class="card-body">
+                              <h5 class="card-title">Taille raisonnée</h5>
+                              <div class="carddecoration"></div>
+                              <p class="card-text">La taille raisonnée est une intervention réfléchie et modérée qui préserve la santé, l'équilibre et le développement naturel de l'arbre, en limitant les coupes aux strictement nécessaires et en réduisant les risques de blessures.<br>La taille se fera à l'intérieur de l'arbre et le houppier ne sera pas réduit en hauteur.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center mb-3 h-100">
+                            <div class="card-body">
+                              <h5 class="card-title">Taille de mise en sécurité</h5>
+                              <div class="carddecoration"></div>
+                              <p class="card-text">La taille de mise en sécurité consiste à éliminer certaines parties de l'arbre, afin de limiter les risques pour les personnes ou pour les biens.<br>Ce type interventions est souvent réalisé en début d'automne et avant la période d'hiver pour anticiper des dégâts éventuels liés aux tempêtes ou aux coups de vent.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center mb-3 h-100">
+                            <div class="card-body">
+                              <h5 class="card-title">Taille architecturée</h5>
+                              <div class="carddecoration"></div>
+                              <p class="card-text">La taille architecturée permet de maintenir les arbres dans un certain volume et sous une forme bien définie et comprend les tailles dites en tête de chats et l'art topiaire.<br>Cette taille est recommendé d'être effectuée régulierement, c'est-à-dire une fois tous les ans ou tous les deux ans, pour respecter la physiologie de l'arbre.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center mb-3 h-100">
+                            <div class="card-body">
+                              <h5 class="card-title">Taille sanitaire</h5>
+                              <div class="carddecoration"></div>
+                              <p class="card-text">La taille sanitaire consiste à supprimer les bois morts, les branches nécrosées, malades, trop proches les unes des autres (branches frotteuses) et mal orientées ainsi que la suppression du gui et des nids de chenille.<br>Le but est de diminuer les risques de chute de branches ainsi que de la santé de l'arbre.</p>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+
+            </div>
+        </div>
+
+        <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  
+        <script src="script.js"></script>
+    </body>
+
+</html>
