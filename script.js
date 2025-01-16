@@ -20,11 +20,11 @@ let navbarentretien = document.getElementById("entretien")
 animatecards()
 
 function animatecards() {
-    let listOfCards = document.getElementsByClassName("card");
+    let listOfElements = document.getElementsByClassName("popanimate");
 
-    for (let i = 0; i < listOfCards.length; i++) {
-        listOfCards[i].style.animation = `opacityanim 1s cubic-bezier(.22,.53,.51,.82) forwards`;
-        listOfCards[i].style.animationDelay = `${i * 0.3}s`;
+    for (let i = 0; i < listOfElements.length; i++) {
+        listOfElements[i].style.animation = `opacityanim 1s cubic-bezier(.22,.53,.51,.82) forwards`;
+        listOfElements[i].style.animationDelay = `${i * 0.3}s`;
     }
 }
 
@@ -60,13 +60,3 @@ navbarabattage.addEventListener("click", function(){sort("abattage")})
 navbarhaubanage.addEventListener("click", function(){sort("haubanage")})
 navbarbroyage.addEventListener("click", function(){sort("broyage")})
 navbarentretien.addEventListener("click", function(){sort("entretien")})
-
-
-function animatecards() {
-    let listOfCards = document.getElementsByClassName("card");
-
-    for (let i = 0; i < listOfCards.length; i++) {
-        listOfCards[i].style.animation = `opacityanim 1s cubic-bezier(.22,.53,.51,.82) forwards`;
-        listOfCards[i].style.animationDelay = `${i * 0.3}s`;
-    }
-}
