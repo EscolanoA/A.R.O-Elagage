@@ -16,7 +16,7 @@ html {
   }
   
   .navbartop {
-    position:sticky;
+    position:fixed;
     top: 0px;
     width: 100%;
     background-color: rgb(1, 50, 34);
@@ -117,6 +117,7 @@ html {
   }
   
   .logobar {
+    margin-top: 10vh;
     display: flex;
     align-items: center;
     height: 10vh;
@@ -586,7 +587,7 @@ html {
     transition: transform 500ms;
   }
   .col:hover {
-    transform: scale(1.05);
+    transform: scale(1.015);
   }
 
   @keyframes opacityanim {
