@@ -1,0 +1,154 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    /*height: 9000px; /*TODO change later*/
+    overflow-x: hidden;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  .navbartop {
+    position:fixed;
+    top: 0px;
+    width: 100%;
+    background-color: rgb(1, 50, 34);
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.612) -3px 9px 20px 0px;
+    height: 10vh;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .navbartop a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: clamp(0.9rem, 0.7vh + 1.4vw, 3rem);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0.5em 2em;
+    text-align: center;
+    transition: color 500ms, background-color 500ms, transform 500ms;
+    height: 100%;
+    font-weight: bold;
+  }
+  
+  .navbartop a:hover {
+    color: rgb(1, 50, 34);
+    background-color: white;
+    transform: scale(1.1);
+  }
+
+  .logobar {
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    background-color: white;
+    justify-content: space-between;
+    z-index: 9;
+  }
+  
+  .logo {
+    height: 100%;
+    width: 10vh;
+    background-image: url(img/logo.png);
+    background-size: cover;
+    animation: logoAnim ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+  }
+  @keyframes logoAnim {
+    0% {
+        opacity: 0;
+        transform: translateX(-10vh) rotate(-50deg);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateY(0px) rotate(0deg);
+    }
+  }
+  
+  .menubuttonAnimation {
+    height: 70%;
+    width: 7vh;
+    margin-right: 5vh;
+    padding: 0;
+    animation: menubuttonAnim ease 1.5s;
+    animation-iteration-count: 1;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  @keyframes menubuttonAnim {
+    0% {
+      opacity: 0;
+      transform: translateX(12vh) rotate(360deg);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0px) rotate(0deg);
+    }
+  }
+  .menubutton {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/menu.png);
+    border: none;
+    background-size: cover;
+    background-color: white;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 500ms;
+  }
+  .menubutton:hover {
+    transform: rotate(-7deg) scale(1.1);
+  }
+  
+  #homepage {
+    height: 80vh;
+    background-color: rgb(255,251,247);
+  }
+  #home {
+    transform: translateY(-10vh);
+  }
+
+  .active {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+
+  .photopic {
+    height:70vh;
+    object-fit: contain;
+  }
+
+  #footerframe {
+    background-color: #E1E5DC;
+    width: 100%;
+    height: 10vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: clamp(0.5rem, 1vh + 0.8vw, 1.5rem);
+  }
+
+  .carousel-control-next, .carousel-control-prev, .carousel-indicators {
+    filter: invert(100%);
+}
