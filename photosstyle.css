@@ -77,7 +77,7 @@ html {
   
     100% {
         opacity: 1;
-        transform: translateY(0px) rotate(0deg);
+        transform: translateX(0px) rotate(0deg);
     }
   }
   
