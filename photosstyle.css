@@ -91,6 +91,7 @@ html {
     animation-delay: 1.5s;
     animation-fill-mode: forwards;
     opacity: 0;
+    z-index: 1000;
   }
   @keyframes menubuttonAnim {
     0% {
@@ -100,7 +101,7 @@ html {
   
     100% {
       opacity: 1;
-      transform: translateY(0px) rotate(0deg);
+      transform: translateX(0px) rotate(0deg);
     }
   }
   .menubutton {
@@ -109,7 +110,7 @@ html {
     background-image: url(img/menu.png);
     border: none;
     background-size: cover;
-    background-color: white;
+    background-color: rgba(0,0,0,0);
     cursor: pointer;
     padding: 0;
     transition: transform 500ms;
@@ -152,3 +153,10 @@ html {
   .carousel-control-next, .carousel-control-prev, .carousel-indicators {
     filter: invert(100%);
 }
+
+  .testclass {
+    height: 70%;
+    width: 7vh;
+    margin-right: 5vh;
+    padding: 0;
+  }
