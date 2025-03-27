@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Accueil</title>
         <link rel="stylesheet" href="styles.css">
         <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
@@ -138,9 +138,16 @@
                                 <form action="https://formsubmit.co/escolanoallan4@gmail.com" method="POST">
                                     <input type="hidden" name="_captcha" value="false">
                                     <input type="hidden" name="_next" value="https://escolanoa.github.io/A.R.O-Elagage/email.html">
-                                    <input type="email" name="email" placeholder="Adresse Email" required>
-                                    <input type="text" name="Message" placeholder="Message" required>
-                                    <button type="submit">Send</button>
+                                    
+                                    <div class="input-group mb-1">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                        <input type="email" name="email" class="form-control" placeholder="Adresse Email" required aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-text">Message</span>
+                                        <textarea type="text" name="Message" required class="form-control" aria-label="With textarea"></textarea>
+                                        <button class="btn btn-outline-secondary" type="submit">Envoyer</button>
+                                    </div>
                                </form>
                             </div>
                         </div>
