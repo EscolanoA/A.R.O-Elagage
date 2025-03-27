@@ -23,7 +23,7 @@ html {
     display: flex;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.612) -3px 9px 20px 0px;
-    height: 10svh;
+    height: 10vh;
     align-items: center;
     z-index: 10000;
   }
@@ -33,7 +33,7 @@ html {
     align-items: center;
     text-decoration: none;
     color: white;
-    font-size: clamp(0.9rem, 0.7svh + 1.4vw, 3rem);
+    font-size: clamp(0.9rem, 0.7vh + 1.4vw, 3rem);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0.5em 2em;
     text-align: center;
@@ -110,17 +110,17 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    height: 80svh;
+    height: 80vh;
     z-index: -2;
     background-image: url('img/blurredBakcground2.jpg');
     background-size: cover;
   }
   
   .logobar {
-    margin-top: 10svh;
+    margin-top: 10vh;
     display: flex;
     align-items: center;
-    height: 10svh;
+    height: 10vh;
     background-color: white;
     justify-content: space-between;
     z-index: 9;
@@ -128,7 +128,7 @@ html {
   
   .logo {
     height: 100%;
-    width: 10svh;
+    width: 10vh;
     background-image: url(img/logo.png);
     background-size: cover;
     animation: logoAnim ease 1.5s;
@@ -140,7 +140,7 @@ html {
   @keyframes logoAnim {
     0% {
         opacity: 0;
-        transform: translateX(-10svh) rotate(-50deg);
+        transform: translateX(-10vh) rotate(-50deg);
     }
   
     100% {
@@ -151,8 +151,8 @@ html {
   
   .menubuttonAnimation {
     height: 70%;
-    width: 7svh;
-    margin-right: 5svh;
+    width: 7vh;
+    margin-right: 5vh;
     padding: 0;
     animation: menubuttonAnim ease 1.5s;
     animation-iteration-count: 1;
@@ -164,7 +164,7 @@ html {
   @keyframes menubuttonAnim {
     0% {
       opacity: 0;
-      transform: translateX(12svh) rotate(360deg);
+      transform: translateX(12vh) rotate(360deg);
     }
   
     100% {
@@ -188,20 +188,20 @@ html {
   }
   
   #homepage {
-    height: 90svh;
+    height: 90vh;
   }
   #home {
-    transform: translateY(-10svh);
+    transform: translateY(-10vh);
   }
   #services {
-    transform: translateY(-10svh);
+    transform: translateY(-10vh);
   }
   
   .serviceshotbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10svh;
+    height: 10vh;
   }
   
   .gridwrapper {
@@ -214,7 +214,7 @@ html {
   }
   
   .servicescontainer {
-    height: 90svh;
+    height: 90vh;
     width: 100%;
     background-color: rgb(207, 148, 104);
     display: flex;
@@ -228,7 +228,7 @@ html {
   }
   
   #card1, #card2, #card3, #card4, #card5  {
-    height: 35svh;
+    height: 35vh;
     width: 25vw;
     margin: 1vw;
     background-color: rgb(255, 255, 255);
@@ -238,7 +238,7 @@ html {
     justify-content: space-between;
     align-items: center;
     box-shadow: 5px 5px 10px 0px rgba(29, 28, 6, 0.551);
-    border-radius: calc(0.5svh + 0.5vw);
+    border-radius: calc(0.5vh + 0.5vw);
   }
   #card1:hover, #card2:hover, #card3:hover, #card4:hover, #card5:hover {
     transform: scale(1.1);
@@ -249,8 +249,8 @@ html {
     background-position: center;
     width: 100%;
     height: 45%;
-    border-top-left-radius: calc(0.5svh + 0.5vw);
-    border-top-right-radius: calc(0.5svh + 0.5vw);
+    border-top-left-radius: calc(0.5vh + 0.5vw);
+    border-top-right-radius: calc(0.5vh + 0.5vw);
   }
   #card2bg {
     background-image: url(./img/service2.jpg);
@@ -258,8 +258,8 @@ html {
     background-position: center;
     width: 100%;
     height: 45%;
-    border-top-left-radius: calc(0.5svh + 0.5vw);
-    border-top-right-radius: calc(0.5svh + 0.5vw);
+    border-top-left-radius: calc(0.5vh + 0.5vw);
+    border-top-right-radius: calc(0.5vh + 0.5vw);
   }
   #card3bg {
     background-image: url(./img/service3v2.jpg);
@@ -267,8 +267,8 @@ html {
     background-position: center;
     width: 100%;
     height: 45%;
-    border-top-left-radius: calc(0.5svh + 0.5vw);
-    border-top-right-radius: calc(0.5svh + 0.5vw);
+    border-top-left-radius: calc(0.5vh + 0.5vw);
+    border-top-right-radius: calc(0.5vh + 0.5vw);
   }
   #card4bg {
     background-image: url(./img/service4.jpg);
@@ -276,8 +276,8 @@ html {
     background-position: center;
     width: 100%;
     height: 45%;
-    border-top-left-radius: calc(0.5svh + 0.5vw);
-    border-top-right-radius: calc(0.5svh + 0.5vw);
+    border-top-left-radius: calc(0.5vh + 0.5vw);
+    border-top-right-radius: calc(0.5vh + 0.5vw);
   }
   #card5bg {
     background-image: url(./img/silogo.png);
@@ -286,8 +286,8 @@ html {
     background-position: center;
     width: 100%;
     height: 45%;
-    border-top-left-radius: calc(0.5svh + 0.5vw);
-    border-top-right-radius: calc(0.5svh + 0.5vw);
+    border-top-left-radius: calc(0.5vh + 0.5vw);
+    border-top-right-radius: calc(0.5vh + 0.5vw);
   }
   
   
@@ -303,18 +303,18 @@ html {
     font-weight: bold;
     color: rgb(29, 28, 6);
     width: 100%;
-    font-size: clamp(0.5rem, 1svh + 1vw, 3rem);
+    font-size: clamp(0.5rem, 1vh + 1vw, 3rem);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: underline;
     height: 30%;
     display: flex;
     align-items: flex-end;
-    padding-bottom: 0.3svh;
+    padding-bottom: 0.3vh;
     padding-left: 0.6vw;
   }
   .servicedescription {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: clamp(0.3rem, 0.7svh + 0.5vw, 2rem);
+    font-size: clamp(0.3rem, 0.7vh + 0.5vw, 2rem);
     height: 70%;
     padding-left: 0.6vw;
     padding-right: 0.6vw;
@@ -323,10 +323,10 @@ html {
   }
   .servicebtn {
     width: 100%;
-    font-size: clamp(0.4rem, 0.7svh + 0.7vw, 2rem);
+    font-size: clamp(0.4rem, 0.7vh + 0.7vw, 2rem);
     height: 20%;
-    border-bottom-left-radius: calc(0.5svh + 0.5vw);
-    border-bottom-right-radius: calc(0.5svh + 0.5vw);
+    border-bottom-left-radius: calc(0.5vh + 0.5vw);
+    border-bottom-right-radius: calc(0.5vh + 0.5vw);
     border: none;
     background-color: rgb(250, 250, 250);
     cursor: pointer;
@@ -338,11 +338,11 @@ html {
   }
   
   #about {
-    transform: translateY(-10svh);
+    transform: translateY(-10vh);
   }
   
   #aboutpage {
-    height: 90svh;
+    height: 90vh;
   }
   
   #aboutcontainer {
@@ -356,7 +356,7 @@ html {
   
   #abouttopbg {
     width: clamp(100px, 100vw, 1500px);
-    height: 20svh;
+    height: 20vh;
     background-color: aqua;
     background-image: url(./img/abouttopbg.jpg);
     background-size:cover;
@@ -366,11 +366,11 @@ html {
   #catchphrasecontainer {
     background-color: white;
     width: 100%;
-    height: 20svh;
+    height: 20vh;
     width: clamp(70px, 70vw, 1000px);
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.451);
-    border-radius: calc(0.2vw + 0.2svh);
-    transform: translateY(-10svh);
+    border-radius: calc(0.2vw + 0.2vh);
+    transform: translateY(-10vh);
     font-style: italic;
     text-align: center;
     display: flex;
@@ -380,11 +380,11 @@ html {
   }
   
   #catchphrasecontainer:hover {
-    transform: rotate(-2deg) translateY(-10svh);
+    transform: rotate(-2deg) translateY(-10vh);
   }
   
   #quote {
-    font-size: clamp(0.5rem, calc(0.3vw + 1svh), 2rem);
+    font-size: clamp(0.5rem, calc(0.3vw + 1vh), 2rem);
     font-family:YujiMai;
     width: 50%;
     padding-left: 5px;
@@ -399,13 +399,13 @@ html {
     background-image: url(./img/quoteimg.jpg);
     background-size: cover;
     background-position: center;
-    border-top-right-radius: calc(0.2vw + 0.2svh);
-    border-bottom-right-radius: calc(0.2vw + 0.2svh);
+    border-top-right-radius: calc(0.2vw + 0.2vh);
+    border-bottom-right-radius: calc(0.2vw + 0.2vh);
   }
   
   #aboutinfos {
     width: 100%;
-    height: 45svh;
+    height: 45vh;
     display: flex;
     justify-content: center;
   }
@@ -430,8 +430,8 @@ html {
   .infosection {
     margin-left: 1vw;
     margin-right: 1vw;
-    margin-top: 1svh;
-    margin-bottom: 1svh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     transition: 500ms transform;
   }
 
@@ -441,15 +441,15 @@ html {
   
   .infotitle {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: clamp(0.2rem, calc(0.5vw + 1.5svh), 2rem);
+    font-size: clamp(0.2rem, calc(0.5vw + 1.5vh), 2rem);
     font-weight: bold;
     color: rgb(12, 48, 12);
-    margin-bottom: 0.3svh;
+    margin-bottom: 0.3vh;
   }
   
   .infotext {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: clamp(0.1rem, calc(0.2vw + 0.9svh), 1.5rem);
+    font-size: clamp(0.1rem, calc(0.2vw + 0.9vh), 1.5rem);
     text-align: justify;
   }
   
@@ -460,19 +460,19 @@ html {
   
   #contactspagecontainer{
     background-color: rgb(255,251,247);
-    height: 90svh;
+    height: 90vh;
     width: 100vw;
     display: flex;
     justify-content: center;
   }
   #contacts{
-    transform: translateY(-10svh);
+    transform: translateY(-10vh);
   }
   
   #contactspageframe {
     background-color: white;
     height: 100%;
-    width: clamp(50px, 85%, 100svh);
+    width: clamp(50px, 85%, 100vh);
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.451);
     border-radius: 5px;
     display: flex;
@@ -498,7 +498,7 @@ html {
     justify-content: space-evenly;
   }
   #contactsinfostext2 {
-    font-size: clamp(0.5rem, 2.5svh + 1vw, 3rem);
+    font-size: clamp(0.5rem, 2.5vh + 1vw, 3rem);
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     transition: transform 500ms;
@@ -514,7 +514,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: clamp(0.5rem, 1.5svh + 1.2vw, 2rem);
+    font-size: clamp(0.5rem, 1.5vh + 1.2vw, 2rem);
   }
   #infosframe{
     width: 100%;
@@ -556,7 +556,7 @@ html {
   }
 
   #spanframe {
-    height: 5svh;
+    height: 5vh;
     background-color: rgb(255,251,247);
     width: 100%;
   }
@@ -564,13 +564,13 @@ html {
   #footerframe {
     background-color: #E1E5DC;
     width: 100%;
-    height: 10svh;
+    height: 10vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: clamp(0.5rem, 1svh + 0.8vw, 1.5rem);
+    font-size: clamp(0.5rem, 1vh + 0.8vw, 1.5rem);
   }
 
   .carddecoration {
@@ -579,7 +579,7 @@ html {
     border-radius: 10000px;
     width: 20%;
     margin-left: 40%;
-    margin-bottom: 0.8svh;
+    margin-bottom: 0.8vh;
   }
 
   .card{
@@ -609,7 +609,7 @@ html {
 
   .pagesubtitle{
     text-align: center;
-    margin-bottom: 1svh;
+    margin-bottom: 1vh;
     opacity: 0;
   }
 
