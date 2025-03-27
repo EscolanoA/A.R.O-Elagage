@@ -18,12 +18,12 @@ html {
   .navbartop {
     position:fixed;
     top: 0px;
-    width: 100%;
+    width: 100vw;
     background-color: rgb(1, 50, 34);
     display: flex;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.612) -3px 9px 20px 0px;
-    height: 10vh;
+    height: 10lvh;
     align-items: center;
     z-index: 10000;
   }
@@ -33,7 +33,7 @@ html {
     align-items: center;
     text-decoration: none;
     color: white;
-    font-size: clamp(0.9rem, 0.7vh + 1.4vw, 3rem);
+    font-size: clamp(0.9rem, 0.7lvh + 1.4vw, 3rem);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0.5em 2em;
     text-align: center;
@@ -110,17 +110,17 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    height: 80vh;
+    height: 80lvh;
     z-index: -2;
     background-image: url('img/blurredBakcground2.jpg');
     background-size: cover;
   }
   
   .logobar {
-    margin-top: 10vh;
+    margin-top: 10lvh;
     display: flex;
     align-items: center;
-    height: 10vh;
+    height: 10lvh;
     background-color: white;
     justify-content: space-between;
     z-index: 9;
@@ -128,7 +128,7 @@ html {
   
   .logo {
     height: 100%;
-    width: 10vh;
+    width: 10lvh;
     background-image: url(img/logo.png);
     background-size: cover;
     animation: logoAnim ease 1.5s;
@@ -140,7 +140,7 @@ html {
   @keyframes logoAnim {
     0% {
         opacity: 0;
-        transform: translateX(-10vh) rotate(-50deg);
+        transform: translateX(-10lvh) rotate(-50deg);
     }
   
     100% {
@@ -151,8 +151,8 @@ html {
   
   .menubuttonAnimation {
     height: 70%;
-    width: 7vh;
-    margin-right: 5vh;
+    width: 7lvh;
+    margin-right: 5lvh;
     padding: 0;
     animation: menubuttonAnim ease 1.5s;
     animation-iteration-count: 1;
@@ -164,7 +164,7 @@ html {
   @keyframes menubuttonAnim {
     0% {
       opacity: 0;
-      transform: translateX(12vh) rotate(360deg);
+      transform: translateX(12lvh) rotate(360deg);
     }
   
     100% {
@@ -188,20 +188,20 @@ html {
   }
   
   #homepage {
-    height: 90vh;
+    height: 90lvh;
   }
   #home {
-    transform: translateY(-10vh);
+    transform: translateY(-10lvh);
   }
   #services {
-    transform: translateY(-10vh);
+    transform: translateY(-10lvh);
   }
   
   .serviceshotbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 10lvh;
   }
   
   .gridwrapper {
@@ -214,7 +214,7 @@ html {
   }
   
   .servicescontainer {
-    height: 90vh;
+    height: 90lvh;
     width: 100%;
     background-color: rgb(207, 148, 104);
     display: flex;
@@ -228,8 +228,9 @@ html {
   }
   
   #card1, #card2, #card3, #card4, #card5  {
-    height: 35vh;
+    height: 35lvh;
     width: 25vw;
+    margin: 1vw;
     background-color: rgb(255, 255, 255);
     transition: transform 500ms;
     display: flex;
@@ -237,7 +238,7 @@ html {
     justify-content: space-between;
     align-items: center;
     box-shadow: 5px 5px 10px 0px rgba(29, 28, 6, 0.551);
-    border-radius: calc(0.5vh + 0.5vw);
+    border-radius: calc(0.5lvh + 0.5vw);
   }
   #card1:hover, #card2:hover, #card3:hover, #card4:hover, #card5:hover {
     transform: scale(1.1);
@@ -248,8 +249,8 @@ html {
     background-position: center;
     width: 100%;
     height: 45%;
-    border-top-left-radius: calc(0.5vh + 0.5vw);
-    border-top-right-radius: calc(0.5vh + 0.5vw);
+    border-top-left-radius: calc(0.5lvh + 0.5vw);
+    border-top-right-radius: calc(0.5lvh + 0.5vw);
   }
   #card2bg {
     background-image: url(./img/service2.jpg);
@@ -257,8 +258,8 @@ html {
     background-position: center;
     width: 100%;
     height: 45%;
-    border-top-left-radius: calc(0.5vh + 0.5vw);
-    border-top-right-radius: calc(0.5vh + 0.5vw);
+    border-top-left-radius: calc(0.5lvh + 0.5vw);
+    border-top-right-radius: calc(0.5lvh + 0.5vw);
   }
   #card3bg {
     background-image: url(./img/service3v2.jpg);
@@ -266,8 +267,8 @@ html {
     background-position: center;
     width: 100%;
     height: 45%;
-    border-top-left-radius: calc(0.5vh + 0.5vw);
-    border-top-right-radius: calc(0.5vh + 0.5vw);
+    border-top-left-radius: calc(0.5lvh + 0.5vw);
+    border-top-right-radius: calc(0.5lvh + 0.5vw);
   }
   #card4bg {
     background-image: url(./img/service4.jpg);
@@ -275,8 +276,8 @@ html {
     background-position: center;
     width: 100%;
     height: 45%;
-    border-top-left-radius: calc(0.5vh + 0.5vw);
-    border-top-right-radius: calc(0.5vh + 0.5vw);
+    border-top-left-radius: calc(0.5lvh + 0.5vw);
+    border-top-right-radius: calc(0.5lvh + 0.5vw);
   }
   #card5bg {
     background-image: url(./img/silogo.png);
@@ -285,8 +286,8 @@ html {
     background-position: center;
     width: 100%;
     height: 45%;
-    border-top-left-radius: calc(0.5vh + 0.5vw);
-    border-top-right-radius: calc(0.5vh + 0.5vw);
+    border-top-left-radius: calc(0.5lvh + 0.5vw);
+    border-top-right-radius: calc(0.5lvh + 0.5vw);
   }
   
   
@@ -302,18 +303,18 @@ html {
     font-weight: bold;
     color: rgb(29, 28, 6);
     width: 100%;
-    font-size: clamp(0.5rem, 1vh + 1vw, 3rem);
+    font-size: clamp(0.5rem, 1lvh + 1vw, 3rem);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: underline;
     height: 30%;
     display: flex;
     align-items: flex-end;
-    padding-bottom: 0.3vh;
+    padding-bottom: 0.3lvh;
     padding-left: 0.6vw;
   }
   .servicedescription {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: clamp(0.3rem, 0.7vh + 0.5vw, 2rem);
+    font-size: clamp(0.3rem, 0.7lvh + 0.5vw, 2rem);
     height: 70%;
     padding-left: 0.6vw;
     padding-right: 0.6vw;
@@ -322,10 +323,10 @@ html {
   }
   .servicebtn {
     width: 100%;
-    font-size: clamp(0.4rem, 0.7vh + 0.7vw, 2rem);
+    font-size: clamp(0.4rem, 0.7lvh + 0.7vw, 2rem);
     height: 20%;
-    border-bottom-left-radius: calc(0.5vh + 0.5vw);
-    border-bottom-right-radius: calc(0.5vh + 0.5vw);
+    border-bottom-left-radius: calc(0.5lvh + 0.5vw);
+    border-bottom-right-radius: calc(0.5lvh + 0.5vw);
     border: none;
     background-color: rgb(250, 250, 250);
     cursor: pointer;
@@ -337,11 +338,11 @@ html {
   }
   
   #about {
-    transform: translateY(-10vh);
+    transform: translateY(-10lvh);
   }
   
   #aboutpage {
-    height: 90vh;
+    height: 90lvh;
   }
   
   #aboutcontainer {
@@ -355,7 +356,7 @@ html {
   
   #abouttopbg {
     width: clamp(100px, 100vw, 1500px);
-    height: 20vh;
+    height: 20lvh;
     background-color: aqua;
     background-image: url(./img/abouttopbg.jpg);
     background-size:cover;
@@ -365,11 +366,11 @@ html {
   #catchphrasecontainer {
     background-color: white;
     width: 100%;
-    height: 20vh;
+    height: 20lvh;
     width: clamp(70px, 70vw, 1000px);
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.451);
-    border-radius: calc(0.2vw + 0.2vh);
-    transform: translateY(-10vh);
+    border-radius: calc(0.2vw + 0.2lvh);
+    transform: translateY(-10lvh);
     font-style: italic;
     text-align: center;
     display: flex;
@@ -379,11 +380,11 @@ html {
   }
   
   #catchphrasecontainer:hover {
-    transform: rotate(-2deg) translateY(-10vh);
+    transform: rotate(-2deg) translateY(-10lvh);
   }
   
   #quote {
-    font-size: clamp(0.5rem, calc(0.3vw + 1vh), 2rem);
+    font-size: clamp(0.5rem, calc(0.3vw + 1lvh), 2rem);
     font-family:YujiMai;
     width: 50%;
     padding-left: 5px;
@@ -398,13 +399,13 @@ html {
     background-image: url(./img/quoteimg.jpg);
     background-size: cover;
     background-position: center;
-    border-top-right-radius: calc(0.2vw + 0.2vh);
-    border-bottom-right-radius: calc(0.2vw + 0.2vh);
+    border-top-right-radius: calc(0.2vw + 0.2lvh);
+    border-bottom-right-radius: calc(0.2vw + 0.2lvh);
   }
   
   #aboutinfos {
     width: 100%;
-    height: 45vh;
+    height: 45lvh;
     display: flex;
     justify-content: center;
   }
@@ -429,8 +430,8 @@ html {
   .infosection {
     margin-left: 1vw;
     margin-right: 1vw;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    margin-top: 1lvh;
+    margin-bottom: 1lvh;
     transition: 500ms transform;
   }
 
@@ -440,15 +441,15 @@ html {
   
   .infotitle {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: clamp(0.2rem, calc(0.5vw + 1.5vh), 2rem);
+    font-size: clamp(0.2rem, calc(0.5vw + 1.5lvh), 2rem);
     font-weight: bold;
     color: rgb(12, 48, 12);
-    margin-bottom: 0.3vh;
+    margin-bottom: 0.3lvh;
   }
   
   .infotext {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: clamp(0.1rem, calc(0.2vw + 0.9vh), 1.5rem);
+    font-size: clamp(0.1rem, calc(0.2vw + 0.9lvh), 1.5rem);
     text-align: justify;
   }
   
@@ -459,19 +460,19 @@ html {
   
   #contactspagecontainer{
     background-color: rgb(255,251,247);
-    height: 90vh;
+    height: 90lvh;
     width: 100vw;
     display: flex;
     justify-content: center;
   }
   #contacts{
-    transform: translateY(-10vh);
+    transform: translateY(-10lvh);
   }
   
   #contactspageframe {
     background-color: white;
     height: 100%;
-    width: clamp(50px, 85%, 100vh);
+    width: clamp(50px, 85%, 100lvh);
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.451);
     border-radius: 5px;
     display: flex;
@@ -497,7 +498,7 @@ html {
     justify-content: space-evenly;
   }
   #contactsinfostext2 {
-    font-size: clamp(0.5rem, 2.5vh + 1vw, 3rem);
+    font-size: clamp(0.5rem, 2.5lvh + 1vw, 3rem);
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     transition: transform 500ms;
@@ -513,7 +514,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: clamp(0.5rem, 1.5vh + 1.2vw, 2rem);
+    font-size: clamp(0.5rem, 1.5lvh + 1.2vw, 2rem);
   }
   #infosframe{
     width: 100%;
@@ -553,7 +554,7 @@ html {
   }
 
   #spanframe {
-    height: 5vh;
+    height: 5lvh;
     background-color: rgb(255,251,247);
     width: 100%;
   }
@@ -561,13 +562,13 @@ html {
   #footerframe {
     background-color: #E1E5DC;
     width: 100%;
-    height: 10vh;
+    height: 10lvh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: clamp(0.5rem, 1vh + 0.8vw, 1.5rem);
+    font-size: clamp(0.5rem, 1lvh + 0.8vw, 1.5rem);
   }
 
   .carddecoration {
@@ -576,7 +577,7 @@ html {
     border-radius: 10000px;
     width: 20%;
     margin-left: 40%;
-    margin-bottom: 0.8vh;
+    margin-bottom: 0.8lvh;
   }
 
   .card{
@@ -606,7 +607,7 @@ html {
 
   .pagesubtitle{
     text-align: center;
-    margin-bottom: 1vh;
+    margin-bottom: 1lvh;
     opacity: 0;
   }
 
